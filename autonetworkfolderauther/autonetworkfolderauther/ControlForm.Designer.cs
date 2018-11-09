@@ -40,7 +40,7 @@
             this.Help.Name = "Help";
             this.Help.Size = new System.Drawing.Size(299, 120);
             this.Help.TabIndex = 2;
-            this.Help.Text = "좌측의 설정 열기 버튼을 클릭 후\r\n\r\n네트워크 검색 켜기\r\n파일 및 프린터 공유 켜기\r\n암호 보호 공유 켜기\r\n사용자의 계정 및 암호를 사용하여" +
+            this.Help.Text = "하단의 설정 열기 버튼을 클릭 후\r\n\r\n네트워크 검색 켜기\r\n파일 및 프린터 공유 켜기\r\n암호 보호 공유 켜기\r\n사용자의 계정 및 암호를 사용하여" +
     " 다른 컴퓨터에 연결\r\n\r\n을 모두 활성화 해주시기 바랍니다.\r\n";
             this.Help.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 

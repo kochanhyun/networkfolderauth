@@ -54,12 +54,13 @@
             // AddButton
             // 
             this.AddButton.Font = new System.Drawing.Font("맑은 고딕", 9F);
-            this.AddButton.Location = new System.Drawing.Point(105, 190);
+            this.AddButton.Location = new System.Drawing.Point(111, 190);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(75, 49);
             this.AddButton.TabIndex = 2;
             this.AddButton.Text = "생성";
             this.AddButton.UseVisualStyleBackColor = true;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // id
             // 
@@ -82,12 +83,12 @@
             // help
             // 
             this.help.AutoSize = true;
-            this.help.Font = new System.Drawing.Font("맑은 고딕", 9F);
-            this.help.Location = new System.Drawing.Point(45, 38);
+            this.help.Font = new System.Drawing.Font("맑은 고딕", 10F);
+            this.help.Location = new System.Drawing.Point(51, 37);
             this.help.Name = "help";
-            this.help.Size = new System.Drawing.Size(206, 30);
+            this.help.Size = new System.Drawing.Size(195, 38);
             this.help.TabIndex = 5;
-            this.help.Text = "윈도우 계정을 생성합니다.\r\n이미 있는 ID를 입력하지 말아주세요.";
+            this.help.Text = "로그인 할 계정을 선택합니다.\r\n없는 계정이라면 생성합니다.";
             this.help.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PasswordForm
