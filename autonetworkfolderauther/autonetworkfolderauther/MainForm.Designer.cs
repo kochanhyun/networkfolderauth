@@ -44,6 +44,8 @@
             this.ShareFolderNameTextbox = new System.Windows.Forms.TextBox();
             this.Readrb = new System.Windows.Forms.RadioButton();
             this.Readnwriterb = new System.Windows.Forms.RadioButton();
+            this.logbox = new System.Windows.Forms.TextBox();
+            this.LOGLOG = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +62,7 @@
             // 
             // FolderPathView
             // 
-            this.FolderPathView.Location = new System.Drawing.Point(167, 105);
+            this.FolderPathView.Location = new System.Drawing.Point(137, 105);
             this.FolderPathView.Name = "FolderPathView";
             this.FolderPathView.ReadOnly = true;
             this.FolderPathView.Size = new System.Drawing.Size(177, 21);
@@ -101,7 +103,7 @@
             // 
             // ShareFolderAddButton
             // 
-            this.ShareFolderAddButton.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.ShareFolderAddButton.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.ShareFolderAddButton.Font = new System.Drawing.Font("맑은 고딕", 9F);
             this.ShareFolderAddButton.Location = new System.Drawing.Point(291, 3);
             this.ShareFolderAddButton.Name = "ShareFolderAddButton";
@@ -115,7 +117,7 @@
             // 
             this.FolderPathText.AutoSize = true;
             this.FolderPathText.Font = new System.Drawing.Font("맑은 고딕", 9F);
-            this.FolderPathText.Location = new System.Drawing.Point(54, 107);
+            this.FolderPathText.Location = new System.Drawing.Point(37, 107);
             this.FolderPathText.Name = "FolderPathText";
             this.FolderPathText.Size = new System.Drawing.Size(59, 15);
             this.FolderPathText.TabIndex = 4;
@@ -124,7 +126,7 @@
             // password
             // 
             this.password.AutoSize = true;
-            this.password.Location = new System.Drawing.Point(52, 178);
+            this.password.Location = new System.Drawing.Point(35, 178);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(62, 12);
             this.password.TabIndex = 8;
@@ -133,7 +135,7 @@
             // id
             // 
             this.id.AutoSize = true;
-            this.id.Location = new System.Drawing.Point(75, 144);
+            this.id.Location = new System.Drawing.Point(58, 144);
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(16, 12);
             this.id.TabIndex = 7;
@@ -141,7 +143,7 @@
             // 
             // PassTextbox
             // 
-            this.PassTextbox.Location = new System.Drawing.Point(167, 173);
+            this.PassTextbox.Location = new System.Drawing.Point(137, 173);
             this.PassTextbox.Name = "PassTextbox";
             this.PassTextbox.ReadOnly = true;
             this.PassTextbox.Size = new System.Drawing.Size(177, 21);
@@ -151,7 +153,7 @@
             // Idtextbox
             // 
             this.Idtextbox.ForeColor = System.Drawing.SystemColors.Window;
-            this.Idtextbox.Location = new System.Drawing.Point(167, 140);
+            this.Idtextbox.Location = new System.Drawing.Point(137, 140);
             this.Idtextbox.Name = "Idtextbox";
             this.Idtextbox.ReadOnly = true;
             this.Idtextbox.Size = new System.Drawing.Size(177, 21);
@@ -161,7 +163,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("맑은 고딕", 9F);
-            this.label1.Location = new System.Drawing.Point(66, 211);
+            this.label1.Location = new System.Drawing.Point(49, 211);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(31, 15);
             this.label1.TabIndex = 9;
@@ -172,7 +174,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("맑은 고딕", 9F);
-            this.label2.Location = new System.Drawing.Point(53, 244);
+            this.label2.Location = new System.Drawing.Point(36, 244);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 15);
             this.label2.TabIndex = 13;
@@ -180,7 +182,7 @@
             // 
             // ShareFolderNameTextbox
             // 
-            this.ShareFolderNameTextbox.Location = new System.Drawing.Point(167, 242);
+            this.ShareFolderNameTextbox.Location = new System.Drawing.Point(137, 242);
             this.ShareFolderNameTextbox.Name = "ShareFolderNameTextbox";
             this.ShareFolderNameTextbox.Size = new System.Drawing.Size(177, 21);
             this.ShareFolderNameTextbox.TabIndex = 12;
@@ -188,7 +190,7 @@
             // Readrb
             // 
             this.Readrb.AutoSize = true;
-            this.Readrb.Location = new System.Drawing.Point(168, 211);
+            this.Readrb.Location = new System.Drawing.Point(138, 211);
             this.Readrb.Name = "Readrb";
             this.Readrb.Size = new System.Drawing.Size(47, 16);
             this.Readrb.TabIndex = 14;
@@ -199,7 +201,7 @@
             // Readnwriterb
             // 
             this.Readnwriterb.AutoSize = true;
-            this.Readnwriterb.Location = new System.Drawing.Point(272, 211);
+            this.Readnwriterb.Location = new System.Drawing.Point(242, 211);
             this.Readnwriterb.Name = "Readnwriterb";
             this.Readnwriterb.Size = new System.Drawing.Size(77, 16);
             this.Readnwriterb.TabIndex = 15;
@@ -207,12 +209,36 @@
             this.Readnwriterb.Text = "읽기/쓰기";
             this.Readnwriterb.UseVisualStyleBackColor = true;
             // 
+            // logbox
+            // 
+            this.logbox.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.logbox.Location = new System.Drawing.Point(352, 131);
+            this.logbox.Multiline = true;
+            this.logbox.Name = "logbox";
+            this.logbox.ReadOnly = true;
+            this.logbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.logbox.Size = new System.Drawing.Size(311, 132);
+            this.logbox.TabIndex = 16;
+            this.logbox.TextChanged += new System.EventHandler(this.logbox_TextChanged);
+            // 
+            // LOGLOG
+            // 
+            this.LOGLOG.AutoSize = true;
+            this.LOGLOG.Font = new System.Drawing.Font("맑은 고딕", 9F);
+            this.LOGLOG.Location = new System.Drawing.Point(349, 106);
+            this.LOGLOG.Name = "LOGLOG";
+            this.LOGLOG.Size = new System.Drawing.Size(31, 15);
+            this.LOGLOG.TabIndex = 17;
+            this.LOGLOG.Text = "로그";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(408, 330);
+            this.ClientSize = new System.Drawing.Size(689, 296);
+            this.Controls.Add(this.LOGLOG);
+            this.Controls.Add(this.logbox);
             this.Controls.Add(this.Readnwriterb);
             this.Controls.Add(this.Readrb);
             this.Controls.Add(this.label2);
@@ -254,6 +280,8 @@
         private System.Windows.Forms.TextBox ShareFolderNameTextbox;
         private System.Windows.Forms.RadioButton Readrb;
         private System.Windows.Forms.RadioButton Readnwriterb;
+        internal System.Windows.Forms.TextBox logbox;
+        private System.Windows.Forms.Label LOGLOG;
     }
 }
 

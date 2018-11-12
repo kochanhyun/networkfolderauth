@@ -54,7 +54,7 @@
             // AddButton
             // 
             this.AddButton.Font = new System.Drawing.Font("맑은 고딕", 9F);
-            this.AddButton.Location = new System.Drawing.Point(111, 190);
+            this.AddButton.Location = new System.Drawing.Point(109, 175);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(75, 49);
             this.AddButton.TabIndex = 2;
