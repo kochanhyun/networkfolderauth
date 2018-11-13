@@ -1,6 +1,0 @@
-https://www.snoopybox.co.kr/1546
-https://ndolson.com/1370
-control.exe /name Microsoft.NetworkAndSharingCenter /page Advanced ( 고급 공유 설정 오픈 )
-https://www.youtube.com/watch?v=Fvlyv04KBsM
-https://stackoverflow.com/questions/1537065/how-can-i-create-a-shared-folder-from-the-windows-command-line
-https://www.sqa.org.uk/e-learning/NetServerOS03CD/page_02.htm

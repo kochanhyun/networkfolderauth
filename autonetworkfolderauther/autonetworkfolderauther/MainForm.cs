@@ -75,7 +75,7 @@ namespace autonetworkfolderauther
             Netusersetcmd.StartInfo.UseShellExecute = false;
             Netusersetcmd.Start();
             Netusersetcmd.StandardInput.WriteLine("echo off");
-            Netusersetcmd.StandardInput.WriteLine("net user " + Idtextbox.Text + " " + PassTextbox.Text + " /add");
+            Netusersetcmd.StandardInput.WriteLine("net user " + Idtextbox.Text + " " + PassTextbox.Text + " /add /active:no");
             Netusersetcmd.StandardInput.WriteLine("net share " + ShareFolderNameTextbox.Text + "=" + FolderPathView.Text + " /GRANT:Administrator,FULL " + "/GRANT:" + Idtextbox.Text + "," + Authchecked);
             Netusersetcmd.StandardInput.Flush();
             Netusersetcmd.StandardInput.Close();
